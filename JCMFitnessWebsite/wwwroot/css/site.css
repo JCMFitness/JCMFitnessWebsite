@@ -8,100 +8,101 @@ body {
     margin: 0;
 }
 
-.container{
-  padding:0 !important;
+.container {
+    padding: 0 !important;
 }
 /* Provide sufficient contrast against white background */
 a {
     color: #0366d6;
 }
 
-/*Navbar CSS 
+    /*Navbar CSS
     -------------------------------------------------------------------------------------------------
 */
 
-a.navbar-brand {
-    margin-left: 0;
-    border-radius: 50%;
-}
+    a.navbar-brand {
+        margin-left: 0;
+        border-radius: 50%;
+    }
 
 .mb-3, .my-3 {
     margin-bottom: 0 !important;
 }
 
-nav{
+nav {
     margin-bottom: 0;
 }
+
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
-a.nav-link{
-    font-size:2em;
+a.nav-link {
+    font-size: 2em;
 }
 
-a.nav-link:hover {
-    transition-duration:.1s;
-    border: solid;
-    border-radius: 0px 1px 0px 1px;
-    border-width: 0px 4px 0px 4px ;
-    border-color: lightgray;
-    
-}
+    a.nav-link:hover {
+        transition-duration: .1s;
+        border: solid;
+        border-radius: 0px 1px 0px 1px;
+        border-width: 0px 4px 0px 4px;
+        border-color: lightgray;
+    }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 
 .footer {
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-  background: white;
-  
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background: white;
 }
 
-.container{
+.container {
     margin: 0;
     margin-left: 0;
 }
@@ -149,4 +150,126 @@ html {
     padding-bottom: 25%;
     padding-top: 25%;
 }
-        
+
+
+
+
+/*Take home section
+    --------------------------------------------------------------------------------------
+*/
+
+
+/**
+
+    Button section
+*/
+
+.container {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 12px 12px 10px;
+    border: 0;
+    border-radius: 3px;
+    background: #bf4d28;
+    text-decoration: none;
+    transition: all 1.2s ease-in-out;
+    animation: pulse 0.3s 2 both;
+    animation-iteration-count: infinite;
+}
+
+    .button i::after {
+        content: "\f019";
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .button:hover {
+
+        background: green;
+    }
+
+    .button.loading i {
+        -webkit-animation: loading 2s infinite linear;
+        animation: loading 2s infinite linear;
+    }
+
+        .button.loading i::after {
+            content: "\f1ce";
+        }
+
+    .button.success {
+        border-radius: 50%;
+        background: #80bca3;
+    }
+
+        .button.success i::after {
+            content: "\f00c";
+            color: transparent;
+            -webkit-animation: change-icon 1s 0.6s linear both;
+            animation: change-icon 1s 0.6s linear both;
+        }
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes change-icon {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes change-icon {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+@-webkit-keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+
