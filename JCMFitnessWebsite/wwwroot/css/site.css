@@ -7,14 +7,21 @@ a.navbar-brand {
 }
 
 .first-grid-container {
-    background-image: url('../images/HomeImage1.jpeg');
-    background-repeat: no-repeat;
+    grid-template-areas: 'bar1 bar1 bar1'
+                        'bar2 bar2 bar2'
+                        'bar3 bar3 bar3';
+    display: grid;
+   
+}
+
+.grid-item1 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 25%;
+    font-size: 30px;
+    text-align: center;
 }
 
 body {
-    margin-bottom: 60px;
-    background-image: url('../images/HomeImage1.jpeg');
-    background-repeat: no-repeat;
     color: ghostwhite;
 }
 
