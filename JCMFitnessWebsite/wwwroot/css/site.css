@@ -1,12 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  margin-left: 0;
-  border-radius: 50%;
-}
-
-
 
 
 body {
@@ -14,11 +8,30 @@ body {
     margin: 0;
 }
 
+.container{
+  padding:0 !important;
+}
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
+/*Navbar CSS 
+    -------------------------------------------------------------------------------------------------
+*/
+
+a.navbar-brand {
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 0 !important;
+}
+
+nav{
+    margin-bottom: 0;
+}
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -94,11 +107,6 @@ html {
 }
 
 
-.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.bg-white.border-bottom.box-shadow.mb-3{
-    margin-bottom: 0;
-}
-
-
 /*HomePageGridSettings
     --------------------------------------------------------------------------------------
 */
@@ -131,6 +139,7 @@ html {
     background-color: floralwhite;
     padding-bottom: 25%;
     padding-top: 25%;
+    color: black;
 }
 
 .item3 {
@@ -140,5 +149,4 @@ html {
     padding-bottom: 25%;
     padding-top: 25%;
 }
-        
         
