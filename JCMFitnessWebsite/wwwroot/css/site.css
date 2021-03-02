@@ -6,11 +6,15 @@ a.navbar-brand {
   border-radius: 50%;
 }
 
-
+.first-grid-container {
+    background-image: url('../images/HomeImage1.jpeg');
+    background-repeat: no-repeat;
+}
 
 body {
     margin-bottom: 60px;
-    background-image: url('../images/pexels-peter-szabo-218434.jpg');
+    background-image: url('../images/HomeImage1.jpeg');
+    background-repeat: no-repeat;
     color: ghostwhite;
 }
 
