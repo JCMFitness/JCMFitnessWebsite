@@ -148,9 +148,9 @@ html {
 }
 
 .row3 {
-    grid-column:span ;
+    grid-column: span;
     grid-row: 3;
-    background-image: url(../images/FirstGridBackGroundImage.jpg);
+    background-color: #252C2D;
     padding-bottom: 25%;
     padding-top: 25%;
 }
