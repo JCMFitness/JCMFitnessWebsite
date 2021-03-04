@@ -145,13 +145,13 @@ html {
     background-color: floralwhite;
     padding-bottom: 25%;
     padding-top: 25%;
-    color: black;  
+    color: black;
 }
 
 .row3 {
     grid-column: span;
     grid-row: 3;
-    background-color: #252C2D;
+    background-color: #4e8bf5;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -193,27 +193,54 @@ html {
 }
 
 
-.right .badge {
+    .right .badge {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
+        background-color: #4e8bf5;
+        border-radius: 80%;
+    }
+.grid-container-3 {
     display: flex;
     align-items: center;
     justify-items: center;
+
+    background-color: #4e8bf5;
+
+}
+
+.grid-container a {
+    filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
+}
+
+.right p {
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    background-color: #4e8bf5;
+
 }
 
 .right .container {
     display: grid;
     grid-template-rows: 200px 200px 200px;
     height: 400px;
-    background-color: green;
+    background-color: #4e8bf5;
     width: 60%;
 }
 
 .row3 .left img {
     height: 600px;
     width: 300px;
-   
+    border-radius: 50%;
     border-radius: 6px;
-   
-    filter: drop-shadow(15px 15px 15px rgb(24, 21, 21));
+
+    filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
 }
 
 
@@ -221,10 +248,6 @@ html {
 
     Button section
 */
-
-
-
-
 
 .button {
     display: inline-block;
@@ -236,39 +259,40 @@ html {
     transition: all 1.2s ease-in-out;
     animation: pulse 0.3s 2 both;
     animation-iteration-count: infinite;
+    filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
 }
 
-    .button i::after {
-        content: "\f019";
-        font-size: 40px;
-        color: #fff;
+.button i::after {
+    content: "\f019";
+    font-size: 60px;
+    color: #fff;
+}
+
+.button:hover {
+
+    background: green;
+}
+
+.button.loading i {
+    -webkit-animation: loading 2s infinite linear;
+    animation: loading 2s infinite linear;
+}
+
+    .button.loading i::after {
+        content: "\f1ce";
     }
 
-    .button:hover {
+.button.success {
+    border-radius: 50%;
+    background: #80bca3;
+}
 
-        background: green;
-    }
-
-    .button.loading i {
-        -webkit-animation: loading 2s infinite linear;
-        animation: loading 2s infinite linear;
-    }
-
-        .button.loading i::after {
-            content: "\f1ce";
-        }
-
-    .button.success {
-        border-radius: 50%;
-        background: #80bca3;
-    }
-
-        .button.success i::after {
-            content: "\f00c";
-            color: transparent;
-            -webkit-animation: change-icon 1s 0.6s linear both;
-            animation: change-icon 1s 0.6s linear both;
-        }
+.button.success i::after {
+    content: "\f00c";
+    color: transparent;
+    -webkit-animation: change-icon 1s 0.6s linear both;
+    animation: change-icon 1s 0.6s linear both;
+}
 
 @-webkit-keyframes loading {
     0% {
