@@ -142,8 +142,8 @@ html {
 .row2 {
     grid-column:span;
     grid-row: 2;
-    background-color: floralwhite;
-    padding-bottom: 5%;
+    background-color: red;
+    padding-bottom: 10%;
     padding-top: 5%;
     color: black;
 }
@@ -174,8 +174,9 @@ html {
     justify-content: space-between;
 }
 
-.row2 p {
-    background-color: floralwhite;
+.row2 .right .container{
+    background-color: red;
+    height: 200px;
 }
 
 .left {
@@ -203,14 +204,15 @@ html {
 }
 
 
-    .right .badge {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
-        background-color: #4e8bf5;
-        border-radius: 80%;
-    }
+.right .badge {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
+    background-color: #4e8bf5;
+    border-radius: 80%;
+}
+
 .grid-container-3 {
     display: flex;
     align-items: center;
@@ -261,12 +263,18 @@ html {
     filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
 }
 
+.row2 .left img {
+    height: 600px;
+    width: 300px;
+    border-radius: 50%;
+    border-radius: 6px;
+    filter: drop-shadow(25px 25px 25px rgb(24, 21, 21));
+}
 
 /**
 
     Button section
 */
-
 .button {
     display: inline-block;
     padding: 12px 12px 10px;
