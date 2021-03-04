@@ -143,8 +143,8 @@ html {
     grid-column:span;
     grid-row: 2;
     background-color: floralwhite;
-    padding-bottom: 25%;
-    padding-top: 25%;
+    padding-bottom: 5%;
+    padding-top: 5%;
     color: black;
 }
 
@@ -166,6 +166,16 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row2 p {
+    background-color: floralwhite;
 }
 
 .left {
@@ -231,6 +241,14 @@ html {
     grid-template-rows: 200px 200px 200px;
     height: 400px;
     background-color: #4e8bf5;
+    width: 60%;
+}
+
+.row2 .right .container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    height: 400px;
+    background-color: floralwhite;
     width: 60%;
 }
 
