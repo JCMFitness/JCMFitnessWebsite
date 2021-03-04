@@ -122,31 +122,36 @@ html {
     text-align: center;
 }
 
-.item1 {
-    grid-column: 1 / span 3;
+.row1 {
+    grid-column:span ;
     grid-row: 1;
     background-image: url(../images/FirstGridBackGroundImage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #18261F;
-    padding-bottom: 25%;
-    padding-top: 25%;
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+.section-title{
+    font-size: 10vw;
 }
 
-.item2 {
-    grid-column: 1 / span 3;
+
+
+.row2 {
+    grid-column:span;
     grid-row: 2;
     background-color: floralwhite;
     padding-bottom: 25%;
     padding-top: 25%;
-    color: black;
+    color: black;  
 }
 
-.item3 {
-    grid-column: 1 / span 3;
+.row3 {
+    grid-column: span;
     grid-row: 3;
-    background-image: url(../images/FirstGridBackGroundImage.jpg);
+    background-color: #252C2D;
     padding-bottom: 25%;
     padding-top: 25%;
 }
