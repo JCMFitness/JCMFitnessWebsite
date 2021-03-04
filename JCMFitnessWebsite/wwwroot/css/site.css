@@ -152,8 +152,8 @@ html {
     grid-column: span;
     grid-row: 3;
     background-color: #252C2D;
-    padding-bottom: 25%;
-    padding-top: 25%;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 
@@ -162,6 +162,43 @@ html {
 /*Take home section
     --------------------------------------------------------------------------------------
 */
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: space-between;
+}
+
+.left {
+    width: 55%;
+    height: 100%;
+    position:relative;
+}
+
+.left img {
+    right:100px;
+}
+
+
+.right{
+    width: 45%;
+    height: 100%;
+}
+
+.right .container {
+    display: grid;
+    height: 100px;
+    background-color: #252C2D;
+}
+
+.row3 .left img {
+    height: 600px;
+    width: 300px;
+   
+    border-radius: 6px;
+   
+    filter: drop-shadow(15px 15px 15px rgb(24, 21, 21));
+}
 
 
 /**
@@ -169,11 +206,7 @@ html {
     Button section
 */
 
-.container {
-    flex: 0 0 auto;
-    width: 150px;
-    height: 150px;
-}
+
 
 
 
