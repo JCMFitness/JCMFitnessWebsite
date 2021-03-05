@@ -10,6 +10,7 @@ body {
 
 .container {
     padding: 0 !important;
+    max-height: 125px;
 }
 /* Provide sufficient contrast against white background */
 a {
