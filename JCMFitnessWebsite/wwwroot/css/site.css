@@ -142,7 +142,7 @@ html {
 .row2 {
     grid-column:span;
     grid-row: 2;
-    background-color: red;
+    background-color: white;
     padding-bottom: 10%;
     padding-top: 5%;
     color: black;
@@ -175,7 +175,7 @@ html {
 }
 
 .row2 .right .container{
-    background-color: red;
+    background-color: white;
     height: 200px;
 }
 
@@ -217,9 +217,7 @@ html {
     display: flex;
     align-items: center;
     justify-items: center;
-
     background-color: #4e8bf5;
-
 }
 
 .grid-container a {
@@ -235,7 +233,6 @@ html {
     letter-spacing: -2px;
     font-weight: bold;
     background-color: #4e8bf5;
-
 }
 
 .right .container {
@@ -295,7 +292,6 @@ html {
 }
 
 .button:hover {
-
     background: green;
 }
 
