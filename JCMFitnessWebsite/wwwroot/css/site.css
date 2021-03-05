@@ -129,10 +129,12 @@ html {
     background-image: url(../images/FirstGridBackGroundImage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-color: #18261F;
-    padding-bottom: 15%;
-    padding-top: 15%;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    margin-top: 0%;
 }
 .section-title{
     font-size: 10vw;
